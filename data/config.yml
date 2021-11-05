@@ -1,0 +1,12 @@
+app_url: "https://test-ccpi99xdt98v.feishu.cn"
+data_dir:
+  test_case: "data/test_case_data"
+  page_function: "data/page_function"
+  log_dir: "logs"
+driver_config:
+  browser: "Chrome"
+  debugger:
+    using_debugger: true
+    debugger_address: 127.0.0.1:5000
+  using_headless: false
+  default_implicit_waiting_time: 20

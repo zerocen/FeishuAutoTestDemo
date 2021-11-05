@@ -1,0 +1,20 @@
+create_chat_group:
+  - step_name: "open create menu"
+    command: "click_element"
+    element: "xpath=//*[@class='lark-drag-disable quick-jump-enter__icon']"
+  - step_name: "click menu item '创建群组'"
+    command: "click_element"
+    element: "xpath=//*[text()='创建群组']"
+  - step_name: "input group name"
+    command: "input_text"
+    element: "xpath=//*[@placeholder='输入群名称（选填）']"
+    text: "{group_name}"
+  - step_name: "click button '创建'"
+    command: "click_element"
+    element: "xpath=//*[text()='创建(Ctrl+Enter)']"
+
+get_current_chat_title_name:
+  - step_name: "Get chat title"
+    command: "get_text"
+    element: "css_selector=.chatWindow_titleName"
+    storage_key: "{chat_title_storage_key}"
