@@ -21,8 +21,8 @@ class BaseApi:
     def get_access_token(self):
         path = "/auth/v3/app_access_token/internal/"
         params = {
-            "app_id": "cli_a060281d35b8d00d",
-            "app_secret": "pEu7r7iaKhHefFuAkczGDh6ksO7xdGIp"
+            "app_id": "",
+            "app_secret": ""
         }
         r = self.send_request("POST", f"{self.base_url}{path}", params=params)
         return r.json()["app_access_token"]
